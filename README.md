@@ -19,7 +19,7 @@ Movie App that allows users to search for their favorite movies and TV shows, se
 
 ## Screenshots
 <div>
-  <img src="src/assests/cineview2.png" alt="dark" style="width:2000px;"/>
+  <img src="src/assets/cineview2.png" alt="dark" style="width:2000px;"/>
 </div>
 
 
