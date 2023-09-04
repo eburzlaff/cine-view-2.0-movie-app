@@ -12,15 +12,15 @@ import { fetchDataFromApi } from '../api/tmdb';
 
 function MovieDetails() {  
 
-    const { mediaType, id: movieId } = useParams();
-    const [id, setId] = useState();
+    const { mediaType, id } = useParams();
+    const [movieId, setMovieId] = useState();
     const [isVideoModalVisible, setIsVideoModalVisible] = useState(false);
     const [videos, setVideos] = useState();
     const [videoKey, setVideoKey] = useState("");
 
     const getVideos = async () => {
         try {
-            const data = await fetchDataFromApi(`/${mediaType}/${movieId}/videos`);
+            const data = await fetchDataFromApi(`/${mediaType}/${id}/videos`);
             setVideos(data);
             setVideoKey(data?.results?.[0]?.key);
             
@@ -31,11 +31,9 @@ function MovieDetails() {
     }
 
     useEffect(() => {
-        if (id) {
-            setTimeout(function(){
-                window.location.reload();
-            },5000); 
-        }       
+        if (movieId) {
+            window.location.reload();  
+        }   
     }, [id])
 
     useEffect(() => {
@@ -50,8 +48,8 @@ function MovieDetails() {
             <ContentWrapper>
                 <Cast />
                 <Videos videos={videos} setVideoKey={setVideoKey} videoKey={videoKey} setIsVideoModalVisible={setIsVideoModalVisible}/>
-                <Similar setId={setId} />
-                <Recommendations setId={setId}/>
+                <Similar setId={setMovieId} />
+                <Recommendations setId={setMovieId}/>
             </ContentWrapper>
             {isVideoModalVisible && (<VideoModal visible={true} setIsVideoModalVisible={setIsVideoModalVisible} videoKey={videoKey} />)}
         </>
