@@ -1,8 +1,28 @@
-# React + Vite
+# CineView 2.0 Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Description
+Movie App that allows users to search for their favorite movies and TV shows, see what is trending, popular and top rated movies. It also allows users to watch trailers and videos for specific movies and TV shows as well as see similar and recommended movies or tv shows. Hosted on Vercel.
 
-Currently, two official plugins are available:
+## Live Demo:
+[Live Demo Link](https://cine-view-2-0-movie-app.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies
+- ReactJS
+- Tailwind CSS
+- Sass
+- TMDB API
+- ViteJS
+- React-Router
+- React-Icons
+- React-Paginate
+- React-Player
+
+## Screenshots
+<div>
+  <img src="src/assests/cineview2.png" alt="dark" style="width:2000px;"/>
+</div>
+
+
+## Setup
+- download or clone the repository
+- run `npm run dev`
