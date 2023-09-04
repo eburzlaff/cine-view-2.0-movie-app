@@ -31,8 +31,9 @@ function MovieDetails() {
     }
 
     useEffect(() => {
-        if (movieId) {
+        if (movieId) {   
             window.location.reload();  
+            window.scrollTo(0, 0);
         }   
     }, [id])
 
