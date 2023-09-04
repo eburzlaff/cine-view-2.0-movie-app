@@ -37,8 +37,8 @@ function MovieDetails() {
     }, [id])
 
     useEffect(() => {
-        window.scrollTo(0, 0);
         getVideos();
+        window.scrollTo(0, 0);
     }, [])
     
     
