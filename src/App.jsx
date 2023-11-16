@@ -43,7 +43,7 @@ function App() {
 
   return (
     <AppContext.Provider value={{apiConfig, movieGenres, tvGenres}}>
-      <div className='min-h-screen w-screen bg-[#04152d]'>
+      <div className='min-h-screen w-screen bg-[#04152d] overflow-hidden'>
         <BrowserRouter>
           <Header/>
           <Routes>

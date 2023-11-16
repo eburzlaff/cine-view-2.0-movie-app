@@ -31,7 +31,7 @@ function Genres({ids}) {
     
     
     return (
-        <div className='flex flex-wrap flex-col flex-wrap gap-2'>
+        <div className='hidden lg:flex flex-wrap flex-col flex-wrap gap-2'>
             {ids?.length >= 1 && movieGenre && tvGenre && ids.map((genreId, i) => (
                 <div key={i} className='text-white bg-rose-500 rounded-xl py-1 px-2 text-center text-xs'>{findGenreNameById(genreId)}</div>
             ))}

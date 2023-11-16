@@ -26,7 +26,7 @@ function Popular(props) {
     
     return (
         <div className='mb-20'>
-            <div className='flex justify-between mb-5'>
+            <div className='flex flex-col md:flex-row gap-5 md:justify-between items-center mb-5'>
                 <h2 className='text-white text-2xl font-medium'>What's Popular</h2>
                 <TabSwitch tabOne="Movies" tabTwo="TV Shows" endpointOne="movie" endpointTwo="tv" setEndpoint={setEndpoint}/>
             </div>

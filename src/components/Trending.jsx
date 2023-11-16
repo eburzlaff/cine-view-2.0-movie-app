@@ -26,7 +26,7 @@ function Trending(props) {
     
     return (
         <div className='mb-20'>
-            <div className='flex justify-between mb-5'>
+            <div className='flex flex-col md:flex-row gap-5 md:justify-between items-center mb-5'>
                 <h2 className='text-white text-2xl font-medium'>Trending</h2>
                 <TabSwitch tabOne="Day" tabTwo="Week" endpointOne="day" endpointTwo="week" setEndpoint={setEndpoint}/>
             </div>

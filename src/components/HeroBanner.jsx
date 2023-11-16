@@ -47,11 +47,18 @@ function HeroBanner(props) {
             <img src={banner} alt="Banner" className='bg-[#04152d] w-full h-full object-cover object-top absolute mix-blend-overlay' />
             <div style={{background: `linear-gradient(180deg,rgba(4,21,45,0) 0%,#04152d 90%)`}} className='w-full h-[250px] absolute bottom-0 left-0'></div>
             <div className='max-w-[900px] w-full h-full mx-auto px-5 flex flex-col justify-center'>
-                <h2 className='text-white text-7xl font-bold text-center mb-5 relative'>Welcome.</h2>
-                <p className='text-white text-2xl text-center mb-11 relative'>Millions of movies, TV shows and people to discover. Explore now.</p>
-                <div className='w-full'>
-                    <input type="text" onKeyDown={handleKeyDown} onChange={(e) => setSearchTerm(e.target.value)} placeholder='Search for a movie or a tv show...' style={{ width: `calc(100% - 120px)`}}  className='px-6 py-4 outline-0 rounded-tl-full rounded-bl-full placeholder-gray-700 text-xl relative' />  
-                    <button onClick={() => searchTerm.length > 0 && navigate(`/search/${searchTerm}`)} className='px-6 py-4 rounded-tr-full rounded-br-full bg-gradient-to-r from-orange-600 to-amber-500 hover:text-black text-xl text-white relative'>Search</button>
+                <h2 className='text-white text-5xl lg:text-7xl font-bold text-center mb-5 relative'>Welcome.</h2>
+                <p className='text-white text-base sm:text-lg lg:text-2xl text-center mb-11 relative'>Millions of movies, TV shows and people to discover. Explore now.</p>
+                <div className='w-full flex flex-col justify-center items-center gap-5 md:gap-0 md:flex-row'>
+                    <input 
+                        type="text" 
+                        onKeyDown={handleKeyDown} 
+                        onChange={(e) => setSearchTerm(e.target.value)} 
+                        placeholder="Search for a movie or a tv show..."
+                        style={{ width: `calc(100% - 120px)`}}  
+                        className='px-6 py-4 outline-0 rounded md:rounded-tl-full md:rounded-bl-full placeholder-gray-700 text-[13.1px] sm:text-base lg:text-xl relative' 
+                    />  
+                    <button onClick={() => searchTerm.length > 0 && navigate(`/search/${searchTerm}`)} className='px-6 py-4 rounded md:rounded-tr-full md:rounded-br-full bg-gradient-to-r from-orange-600 to-amber-500 hover:text-black text-base lg:text-xl text-white relative'>Search</button>
                 </div> 
             </div>
         </div>
