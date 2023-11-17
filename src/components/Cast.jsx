@@ -28,7 +28,7 @@ function Cast(props) {
     
     return (
         <div className='mb-20'>
-            <div className='flex justify-between mb-5'>
+            <div className='flex justify-center md:justify-start mb-5'>
                 <h2 className='text-white text-2xl font-medium'>Top Cast</h2>
             </div>
             {cast?.cast && <CastCard data={cast?.cast} />}

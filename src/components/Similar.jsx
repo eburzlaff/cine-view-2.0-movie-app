@@ -28,7 +28,7 @@ function Similar({setId}) {
     
     return (
         <div className='mb-20'>
-            <div className='flex justify-between mb-5'>
+            <div className='flex justify-center md:justify-start mb-5'>
                 <h2 className='text-white text-2xl font-medium'>{title}</h2>
             </div>
             <Carousel mediaType={mediaType === "movie" ? "movie" : "tv"} data={similar} setId={setId}/>
