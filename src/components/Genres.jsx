@@ -20,7 +20,7 @@ function Genres({ids}) {
     }
 
     const findGenreNameById = (genreId) => {    
-        const foundGenre = movieGenre.genres && movieGenre.genres.find(genre => genre.id === genreId) || tvGenre.genres.find(genre => genre.id === genreId);
+        const foundGenre = movieGenre.genres && movieGenre.genres.find(genre => genre?.id === genreId) || tvGenre.genres.find(genre => genre?.id === genreId);
         return foundGenre && foundGenre.name;       
     }
 
