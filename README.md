@@ -25,4 +25,5 @@ Movie App that allows users to search for their favorite movies and TV shows, se
 
 ## Setup
 - download or clone the repository
+- run `npm install`
 - run `npm run dev`
